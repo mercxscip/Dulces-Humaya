@@ -400,6 +400,7 @@ label {
 
 .footer-title {
     font-size: var(--font-xsmall);
+    font-weight: 600;
 }
 
 .footer-content {
@@ -408,11 +409,125 @@ label {
 }
 
 .footer-list {
+    width: 200px;
+    height: 210px;
     display: flex;
     flex-direction: column;
-    justify-content:start;
-    align-items: start;
+    text-align: center;
+    align-items: center;
     padding: 10px;
+    margin-top: 10px;
+}
+
+.footer-link {
+    font-size: 15px;
+}
+
+/* COOKIES */
+
+.aviso-cookie {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    line-height: 200%;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    padding-top: 60px;
+    box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, .25);
+    text-align: center;
+}
+
+.aviso-cookie.activo {
+    display: block;
+}
+
+.aviso-cookie .cookie-icon {
+    max-width: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.aviso-cookie .cookie-title,
+.aviso-cookie .cookie-text {
+    margin-bottom: 20px;
+}
+
+.aviso-cookie .cookie-btn {
+    width: 100%;
+    background-color: var(--fondo-oscuro);
+    color: white;
+    border: none;
+    font-size: var(--font-small);
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .3s ease all;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.aviso-cookie .cookie-btn:hover {
+    background-color: black;
+}
+
+.aviso-cookie .cookie-link {
+    color: black;
+    font-size: var(--font-small);
+}
+
+.aviso-cookie .cookie-link:hover {
+    text-decoration: underline;
+}
+
+.cookie-bg {
+    background-color: rgba(0, 0, 0, .35);
+    display: none;
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.cookie-bg.activo {
+    display: block;
+}
+
+/* COOKIES PAGE */
+
+.cookies-body {
+    background-color: white;
+    line-height: 200%;
+}
+
+.cookies-body p {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: var(--font-medium);
+}
+
+.cookies-body h2 {
+    font-size: var(--font-large);
+    color: rgb(12, 19, 110);
+}
+
+.cookies-body a {
+    font-size: var(--font-medium);
+}
+
+.cookies-body div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(47, 120, 188);
+    margin-bottom: 20px;
 }
 
 /* MEDIA */
